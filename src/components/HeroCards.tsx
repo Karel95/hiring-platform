@@ -28,8 +28,8 @@ export const HeroCards = () => {
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Jane Doe English</CardTitle>
+            <CardDescription>@jane_doe</CardDescription>
           </div>
         </CardHeader>
 
@@ -40,19 +40,19 @@ export const HeroCards = () => {
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
+            src=""
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Jane Doe</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            English Teacher
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
+            I really enjoy transforming ideas into thoughts that
             exceeds expectations
           </p>
         </CardContent>
@@ -61,7 +61,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -73,7 +73,7 @@ export const HeroCards = () => {
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -94,7 +94,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
+              href="https://www.linkedin.com/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
