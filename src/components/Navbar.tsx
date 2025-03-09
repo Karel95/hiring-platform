@@ -12,7 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Linkedin } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -55,7 +55,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Hiring Platform Su.
             </a>
           </NavigationMenuItem>
 
@@ -96,14 +96,14 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    <Linkedin className="mr-2 w-5 h-5" />
+                    LinkedIn
                   </a>
                 </nav>
               </SheetContent>
@@ -129,12 +129,12 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/"
+              href="https://www.linkedin.com/"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              <Linkedin className="mr-2 w-5 h-5" />
+              LinkedIn
             </a>
 
             <ModeToggle />

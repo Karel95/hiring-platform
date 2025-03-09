@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -12,6 +12,7 @@ import {
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import WhatsAppButton from "./ui/wa-btn";
 
 export const HeroCards = () => {
   return (
@@ -33,14 +34,14 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>I love to teach english!</CardContent>
       </Card>
 
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src=""
+            src="/src/assets/english-teacher.jpg"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
@@ -112,7 +113,7 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
+            Basic
             <Badge
               variant="secondary"
               className="text-sm text-primary"
@@ -121,8 +122,8 @@ export const HeroCards = () => {
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">$20</span>
+            <span className="text-muted-foreground"> /huur</span>
           </div>
 
           <CardDescription>
@@ -131,14 +132,14 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <WhatsAppButton phoneNumber="+5977149293" message="Hello, I would like to hire you..." />
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["4 Text books", "4 Workbooks", "Upto 6 notebooks"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
