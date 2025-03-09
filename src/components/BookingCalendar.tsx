@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-// import "react-calendar/dist/Calendar.css";
 import { format } from "date-fns";
 
 interface BookingCalendarProps {
@@ -18,18 +17,29 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({ unavailableDates }) =
 
   return (
     <div className="flex flex-col items-center p-4 shadow-lg rounded-lg">
-      <h2 className="text-lg font-semibold mb-2">Select a date:</h2>
       <Calendar
         onChange={(selectedDate) => setDate(selectedDate as Date)}
         value={date}
         tileDisabled={({ date }) => isDateUnavailable(date)}
+        tileClassName={({ date }) =>
+          isDateUnavailable(date) ? "unavailable-day" : ""
+        }
         className="rounded-lg shadow-md p-2"
       />
       {date && (
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-white">
           Appointment: <strong>{format(date, "dd/MM/yyyy")}</strong>
         </p>
       )}
+      <style>
+        {`
+          .unavailable-day {
+            background-color: #ffcccc !important;
+            color: #ff0000 !important;
+            text-decoration: line-through;
+          }
+        `}
+      </style>
     </div>
   );
 };

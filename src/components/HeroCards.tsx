@@ -162,13 +162,13 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] right-[0px] bottom-[-200px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] right-[0px] bottom-[-150px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           {/* <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
           </div> */}
           <div>
-            <CardTitle>Calendar</CardTitle>
+            <CardTitle>Select a date:</CardTitle>
             <BookingCalendar unavailableDates={unavailableDates} />
             {/* <CardDescription className="text-md mt-2">
               Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
